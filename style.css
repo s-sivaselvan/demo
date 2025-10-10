@@ -1,0 +1,11 @@
+.container
+{ display: flex;
+     justify-content: space-around; }
+ h1{
+     text-align: center; } 
+ h2{
+     color: rgb(178, 39, 32); }
+img{ 
+    border-radius:40%; } 
+  body{
+     background-color: rgb(113, 249, 249); }

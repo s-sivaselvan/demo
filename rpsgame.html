@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <script>
+        function play(player){
+        let choices=['rock','paper','scissor'];
+        let computer=choices[Math.floor(Math.random()*3)];
+        let result='';
+        if(player===computer){
+            result='Draw';
+        }
+        else if((player==='rock' && computer==='scissor') || (player==='scissor' && computer==='paper') ||(player==='paper' && computer==='rock')){
+           result='Player Wins';
+        }
+        else{
+            result='Computer Wins';
+        }
+        document.getElementById("results").innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <h3>Choose Your Choice:</h3> 
+    <div class="choices">
+        <button onclick="play('rock')">Rock</button>
+        <button onclick="play('paper')">Paper</button>
+        <button onclick="play('scissor')">Scissor</button>
+    </div>
+    <div id="results">Result:</div>
+</body>
+</html>
