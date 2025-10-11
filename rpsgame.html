@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        .choices button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .choices button:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+        }
+    </style>
     <script>
         function play(player){
-        let choices=['rock','paper','scissor'];
-        let computer=choices[Math.floor(Math.random()*3)];
-        let result='';
-        if(player===computer){
-            result='Draw';
-        }
-        else if((player==='rock' && computer==='scissor') || (player==='scissor' && computer==='paper') ||(player==='paper' && computer==='rock')){
-           result='Player Wins';
-        }
-        else{
-            result='Computer Wins';
-        }
-        document.getElementById("results").innerHTML=result;
+            let choices=['rock','paper','scissor'];
+            let computer=choices[Math.floor(Math.random()*3)];
+            let result='';
+            if(player===computer){
+                result='Draw';
+            }
+            else if((player==='rock' && computer==='scissor') || (player==='scissor' && computer==='paper') ||(player==='paper' && computer==='rock')){
+               result='Player Wins';
+            }
+            else{
+                result='Computer Wins';
+            }
+            document.getElementById("results").innerHTML=result;
         }
     </script>
 </head>
