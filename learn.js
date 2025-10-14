@@ -29,8 +29,8 @@ function odd(num){
 let oddnums=arr.filter(odd);
 console.log(oddnums);
 let ar=[13,15,20,35,27];
-let mul=ar.filter((n)=>n%5==0);
-console.log(mul);
+let mull=ar.filter((n)=>n%5==0);
+console.log(mull);
  let ar1=[1,2,3,4,5];
 let sum=ar1.reduce((product,current)=>{
     return product*current;
@@ -43,7 +43,6 @@ let sol=et.reduce((product,quantity)=>{
 },0);
 console.log(sol);
 //destructration
-const [one, ,two]=ar1;
 const [one,...two]=ar1;
 console.log(two);
 spread
@@ -83,7 +82,26 @@ async function fetchapi(){
   }
 }
 fetchapi(); 
-///String literals
+//String literals
 let name='siva'
 let age=24
 console.log(`I am ${name} and and my age is ${age}`);
+// stack
+const mul=(a,b)=>{
+  return a*b;
+}
+const square=(n)=>{
+  return mul(n,n);
+}
+const print=(n)=>{
+  let s=square(n);
+  console.log(s);
+}
+print(4);
+// Synchronous 
+console.log("first");
+Promise.resolve().then(console.log("From promises"));
+setTimeout(()=>{
+  console.log("Inside Settimeout");
+})
+console.log("Last")
