@@ -1,8 +1,24 @@
 import React from 'react'
-
+import {Routes,Route} from 'react-router-dom'
+import User from './components/User'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Services from './pages/Services'
+import Navbar from './components/navbar'
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Navbar/>
+      <Routes>
+      <Route path="/" Component={Home}/>
+       <Route path="/about" Component={About}/>
+       <Route path="/contact" Component={Contact}/>
+       <Route path="/services" Component={Services}/>
+       </Routes>
+    <User name="sivaselvan" depart="IT"  skills={['HTML','CSS','JS']}/>
+   {/* <Person name="Raja" depart="CSE" /> */}
+    </>
   )
 }
 
