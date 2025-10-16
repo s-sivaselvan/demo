@@ -1,0 +1,7 @@
+.link{
+    background-color: aqua;
+    height:40px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
