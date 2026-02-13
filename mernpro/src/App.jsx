@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import Services from './pages/Services'
 import Navbar from './components/navbar'
 import States from './hooks/States'
+import Effects  from './hooks/Effects'
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
        <Route path="/contact" Component={Contact}/>
        <Route path="/services" Component={Services}/>
        <Route path="/states" Component={States}/>
+       <Route path="/effects" Component={Effects}/>
        </Routes>
     <User name="sivaselvan" depart="IT"  skills={['HTML','CSS','JS']}/>
    {/* <Person name="Raja" depart="CSE" /> */}

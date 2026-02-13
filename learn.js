@@ -105,3 +105,10 @@ setTimeout(()=>{
   console.log("Inside Settimeout");
 })
 console.log("Last")
+
+async function greet() {
+    return "Hello Greeting";
+}
+greet().then(message => {
+    console.log(message);
+});

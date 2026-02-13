@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-    <Link to='/states'>Usestate</Link>
+    <Link to='/states'>Usestate</Link><br/>
+    <Link to='/effects'>Useeffects</Link>
     </div>
   )
 }
